@@ -1,30 +1,17 @@
-// random number generator(난수 생성기)
+// useful string properties & methods(유용한 문자열 속성 및 메서드)
+
+let userName = "Song Je Young";
+let poneNumber = "123-456-7890";
+
+//console.log(userName.length); //13
+//console.log(userName.charAt(0));  //s
+//console.log(userName.indexOf("o"))  //1
+//console.log(userName.lastIndexOf("o"))  //9
+//userName = userName.trim(); //공백제거
+//userName = userName.toUpperCase();  //모두 대문자
+//userName = userName.toLowerCase();  //모두 소문자
 
 
-//let x = Math.random();
-//let x = Math.random() * 6;
-//let x = Math.floor(Math.random() * 6); //난수 0~5까지
+poneNumber = poneNumber.replaceAll("-", "/"); //모두 변경 
 
-//주사위 3개
-// let x = Math.floor(Math.random() * 6) + 1; //난수 1~6까지(주사위)
-// let y = Math.floor(Math.random() * 6) + 1;
-// let z = Math.floor(Math.random() * 6) + 1;
-
-// console.log(x);
-// console.log(y);
-// console.log(z);
-
-let x;
-let y;
-let z;
-
-document.getElementById("rollBtn").onclick = function () {
-
-  x = Math.floor(Math.random() * 6) + 1;
-  y = Math.floor(Math.random() * 6) + 1;
-  z = Math.floor(Math.random() * 6) + 1;
-
-  document.getElementById("xLabel").innerHTML = x;
-  document.getElementById("yLabel").innerHTML = y;
-  document.getElementById("zLabel").innerHTML = z;
-}
+console.log(poneNumber);
