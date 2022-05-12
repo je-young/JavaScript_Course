@@ -1,36 +1,13 @@
-// Type Conversion = change the of a value to another(변환 유형 = 값을 다른 값으로 변경)
-//                   (strings, numbers, booleans) 
+// const  = a variable that can't be changed(const = 변경할 수 없는 변수)
 
+let pi = 3.14159; //파이
+let radius; //반지름
+let circumference;  //둘레
 
-/*
-let age = window.prompt("나이가 어떻게 되시나요?");
+radius = window.prompt("원의 반지름을 입력");
+//console.log(typeof radius); //string
+radius = Number(radius);  //타입을 Number로 변경
 
-console.log(typeof age); //string
+circumference = 2 * pi * radius;  // 계산공식
 
-age = Number(age); // age 변수를 넘버로 변경
-
-console.log(typeof age); //number
-
-age += 1;
-
-console.log("생일 축하 합니다! 당신의 나이는 " + age + " 살 입니다~^^");
-*/
-
-let w;
-let x;
-let y;
-let z;
-let s;
-
-w = Number("pizza"); //NaN 'number'
-x = Number("3.14"); //3.14 'number'
-y = String(3.14); //3.14 string
-z = Boolean(""); //false 'boolean'
-s = Boolean("pizza"); //true 'boolean'
-
-
-console.log(w, typeof w); //NaN 'number'
-console.log(x, typeof x); //3.14 'number'
-console.log(y, typeof y); //3.14 string
-console.log(z, typeof z); //false 'boolean'
-console.log(s, typeof s); //true 'boolean'
+console.log("둘레는:", circumference);  //둘레는: 56.54862
