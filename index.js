@@ -1,15 +1,27 @@
-// const  = a variable that can't be changed(const = 변경할 수 없는 변수)
+// Math 함수
+// Math 객체는 수학에서 자주 사용하는 상수와 함수들을 미리 구현해 놓은 자바스크립트 표준 내장 객체이다.
+// 생성자가 존재하지 않아서 따로 인스턴스를 생성하지 않더라도 Math 객체의 모든 method나 property를 바로 사용할 수 있다.
 
-const PI = 3.14159; //const PI(대문자 좋은습관)
-let radius; //반지름
-let circumference;  //둘레
 
-radius = window.prompt("원의 반지름을 입력"); //9를 입력함.
-//console.log(typeof radius); //string
-radius = Number(radius);  //타입을 Number로 변경
+//let x = 3.14;
+let x;
+let y = 5;
+let z = 9;
+let maximum;
+let minimum;
 
-//PI = 420.69;  //파이 값을 실수로 변경시 (위에서 이미 const 로 변경 할 수 없는 변수로 지정하여 오류남)
 
-circumference = 2 * PI * radius;  //계산공식
+//x = Math.round(x);  //3 소수점 첫 번째 자리에서 반올림 후 반환
+//x = Math.floor(x);  //3 인수와 같거나 작은 수 중에서 가장 큰 정수 반환
+//x = Math.ceil(x); //4 인수와 같거나 큰 수 중에서 가장 작은 정수 반환
+//x = Math.pow(x, 2); //9.8596 x의 y제곱을 반환
+//x = Math.sqrt(x); //1.772004514666935 x의 제곱근 반환
+//x = Math.abs(x);  //3.14 x의 절댓값 반환
+//maximum = Math.max(x, y, z);  //9 가장 큰 값 반환
+//minimum = Math.min(x, y, z);  //3.14 가장 작은 값 반환
+x = Math.PI;  //3.141592653589793 π 말그대로 PI 파이 원의 둘레와 지름의 비율=원주율  3.14159.... 의 값을 가짐 
 
-console.log("둘레는:", circumference);  //둘레는: 56.54862
+
+console.log(x);
+//console.log(maximum);
+//console.log(minimum);
