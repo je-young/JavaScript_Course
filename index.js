@@ -1,20 +1,15 @@
-// !(NOT) 논리 연산자 NOT은 느낌표 !를 써서 만들 수 있습니다.
-// 피연산자를 불린형(true / false)으로 변환합니다.
-// true -> false , false -> true
+// while loop = while문은 조건문이 참일 때 실행되는 반복문이다. 조건은 문장안이 실행되기 전에 참, 거짓을 판단한다.
+// 코드 수행 순서는
+// 1. 먼저 조건식을 판단하고,
+// 2. 조건식의 결과가 true이면, 코드 블록 수행합니다.
+//    조건식의 결과가 false이면, while문을 빠져나옵니다.
+// 1번과 2번을 반복적으로 수행합니다.
 
 
-let temp = - 15;
-let sunny = true;
+let userName = "";
 
-if (!(temp > 0)) {
-  console.log("밖은 춥다.");
+while (userName == "" || userName == null) {
+  userName = window.prompt("이름을 입력하세요.");
 }
-else {
-  console.log("밖은 따뜻하다.");
-}
-if (!sunny) {
-  console.log("밖은 화창하다.");
-}
-else {
-  console.log("밖은 흐리다.");
-}
+
+console.log("반갑습니다", userName);
