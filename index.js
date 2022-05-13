@@ -1,21 +1,16 @@
-// slice() 문자열의 섹션을 추출
-//         새 문자열로 반환합니다.
-//         원래 문자열을 수정하지 않고
+// method chaining = calling one method after another
+//                   in one continuous line of code
+//                   (연속되는 한 줄의 암호로  메서드를 차례로 호출하는 방법)
 
 
-let fullName = "Marlboro Gold";
-let firstName = "Song";
-let lastName = "Je Young";
+let userNeme = "     Song Je Young      ";
 
-// 수동
-//firstName = fullName.slice(0, 4); //0번째 인덱스 부터 4인덱스 이전까지(Song)
-//lastName = fullName.slice(5);  //5번째 인덱스 부터 마지막까지(Je Young)
+// let 두줄코드 = userNeme.charAt(0);
+// 두줄코드 = 두줄코드.toUpperCase();
 
-// 자동
-firstName = fullName.slice(0, fullName.indexOf(" ")); //0번째 인덱스 부터 공백 이전까지
-lastName = fullName.slice(fullName.indexOf(" ") + 1); //첫번째 공백인덱스+1 부터 끝까지
+let 한줄코드 = userNeme.toUpperCase().trim().charAt(0);
+// toUpperCase() = 대문자로 변경
+// trim() = 좌, 우 공백제거
+// charAt() = 인덱스에 위치한 단일문자 반환
 
-
-
-console.log(firstName);
-console.log(lastName);
+console.log(한줄코드);
