@@ -1,19 +1,24 @@
-// nested loop = 중첩루프(다른 루프 내부의 루프)
+// Function = 함수(function)란 하나의 특별한 목적의 작업을 수행하도록 설계된 독립적인 블록을 의미합니다.
+//            이러한 함수는 필요할 때마다 호출하여 해당 작업을 반복해서 수행할 수 있습니다.
 
 
-// for (let i = 1; i <= 2; i += 1){
-//   for (let j = 1; j <= 3; j += 1){
-//     console.log(j);
-//   }
-// }
 
-let symbols = window.prompt("Enter a symbol to use ");
-let lows = window.prompt("Enter # of lows");
-let columns = window.prompt("Enter # of columns");
+function 시작프로그램() {
+  let 이름 = "송제영";
+  let 나이 = 45;
 
-for (let i = 1; i <= lows; i += 1){
-  for (let j = 1; j <= columns; j += 1){
-    document.getElementById("myRectangle").innerHTML += symbols;
-  }
-  document.getElementById("myRectangle").innerHTML += "<br>";
+  생일축하노래(이름, 나이);
 }
+
+시작프로그램();
+
+function 생일축하노래(a, b) {
+  console.log("생일 축하 합니다~");
+  console.log("생일 축하 합니다~");
+  console.log("사랑하는" , a, "생일 축하 합니다~");
+  console.log("생일 축하 합니다~");
+  console.log("생일 축하 합니다~");
+  console.log("사랑하는", a, b, "살");
+  console.log("생일 축하 합니다~");
+}
+
