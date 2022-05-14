@@ -1,36 +1,20 @@
-// 삼항 조건 연산자(ternary operator) = 'if/else 문'에 대한 바로 가기
-//                    3개의 피연산자를 사용합니다.
-//                    1. 의 조건은?
-//                    2. True인 경우 표현식:
-//                    3. False인 경우 표현식
-// condition(조건문) ? exprIfTrue(참일 때 실행할 식) : exprIfFalse(거짓일 때 실행할 식)
+// variable scope = 변수에 접근할 수 있는 곳
+// let = 변수는 블록 범위 {}로 제한됩니다.
+// var = 변수는 function(){}으로 제한됩니다.
 
+/*
+for (var i = 1; i <= 3; i++) {
+  console.log(i) //1,2,3 [let, var]
+}
+  console.log(i) //[let] Uncatched ReferenceError: i가 정의되지 않았습니다. [var] 4
 
-let adult = checkAge(21);
-
-console.log(adult);
-
-function checkAge(age) {
-  if (age >= 18) {
-    return true;
-  }
-  else {
-    return false;
+doSomething();
+function doSomething() {
+  for (var i = 1; i <= 3; i++) {
+    console.log(i) //1,2,3 [let, var]
   }
 }
+console.log(i); //[let] Uncatched ReferenceError: i가 정의되지 않았습니다. [var] 4
+*/
 
-let _adult = _checkAge(12);
-
-console.log(_adult);
-
-function _checkAge(age) {
-  return age >= 18 ? true : false;
-}
-
-
-checkWinner(true);
-checkWinner(false);
-
-function checkWinner(win) {
-  win ? console.log('YOU WIN!') : console.log('YOU LOSE!');
-}
+let name = 'song'; // window
