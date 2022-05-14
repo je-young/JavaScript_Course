@@ -1,11 +1,19 @@
-// break = break문은 if, switch, for,while문등에서 break문을 만나면 바로 빠져나가는 명령문
-// continue = 어떠한 행위를 하다가 continue문을 만나면 해야할 명령문을 실행하지 않고 그 다음 명령문을 실행하는 명령문
+// nested loop = 중첩루프(다른 루프 내부의 루프)
 
 
-for (let i = 1; i <= 20; i += 1) {
-  if (i == 13) {
-    //break;
-    continue;
+// for (let i = 1; i <= 2; i += 1){
+//   for (let j = 1; j <= 3; j += 1){
+//     console.log(j);
+//   }
+// }
+
+let symbols = window.prompt("Enter a symbol to use ");
+let lows = window.prompt("Enter # of lows");
+let columns = window.prompt("Enter # of columns");
+
+for (let i = 1; i <= lows; i += 1){
+  for (let j = 1; j <= columns; j += 1){
+    document.getElementById("myRectangle").innerHTML += symbols;
   }
-  console.log(i);
+  document.getElementById("myRectangle").innerHTML += "<br>";
 }
