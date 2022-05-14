@@ -1,17 +1,36 @@
-// return = 함수 실행을 종료하고, 주어진 값을 함수 호출 지점으로 반환합니다.
+// 삼항 조건 연산자(ternary operator) = 'if/else 문'에 대한 바로 가기
+//                    3개의 피연산자를 사용합니다.
+//                    1. 의 조건은?
+//                    2. True인 경우 표현식:
+//                    3. False인 경우 표현식
+// condition(조건문) ? exprIfTrue(참일 때 실행할 식) : exprIfFalse(거짓일 때 실행할 식)
 
 
-let width;
-let height;
-let area;
+let adult = checkAge(21);
 
-width = window.prompt("Enter width");
-height = window.prompt("Enter height");
+console.log(adult);
 
-area = getArea(width, height);
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
 
-console.log("the area is", area);
+let _adult = _checkAge(12);
 
-function getArea(width, height) {
-  return width * height;
+console.log(_adult);
+
+function _checkAge(age) {
+  return age >= 18 ? true : false;
+}
+
+
+checkWinner(true);
+checkWinner(false);
+
+function checkWinner(win) {
+  win ? console.log('YOU WIN!') : console.log('YOU LOSE!');
 }
