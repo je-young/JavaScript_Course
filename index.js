@@ -1,24 +1,17 @@
-// Function = 함수(function)란 하나의 특별한 목적의 작업을 수행하도록 설계된 독립적인 블록을 의미합니다.
-//            이러한 함수는 필요할 때마다 호출하여 해당 작업을 반복해서 수행할 수 있습니다.
+// return = 함수 실행을 종료하고, 주어진 값을 함수 호출 지점으로 반환합니다.
 
 
+let width;
+let height;
+let area;
 
-function 시작프로그램() {
-  let 이름 = "송제영";
-  let 나이 = 45;
+width = window.prompt("Enter width");
+height = window.prompt("Enter height");
 
-  생일축하노래(이름, 나이);
+area = getArea(width, height);
+
+console.log("the area is", area);
+
+function getArea(width, height) {
+  return width * height;
 }
-
-시작프로그램();
-
-function 생일축하노래(a, b) {
-  console.log("생일 축하 합니다~");
-  console.log("생일 축하 합니다~");
-  console.log("사랑하는" , a, "생일 축하 합니다~");
-  console.log("생일 축하 합니다~");
-  console.log("생일 축하 합니다~");
-  console.log("사랑하는", a, b, "살");
-  console.log("생일 축하 합니다~");
-}
-
